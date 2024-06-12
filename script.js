@@ -18,7 +18,7 @@ function logar(){
     let senhaDigitada = document.getElementById('senhaLogin').value
     if(usuarios.includes(nomeDigitado)){
         if(senhas[usuarios.indexOf(nomeDigitado)] === senhaDigitada){
-            window.location.href="logado.html"
+            window.open("logado.html")
         }else{
             alert("Senha incorreta.")
         }
